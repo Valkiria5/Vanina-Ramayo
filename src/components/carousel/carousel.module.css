@@ -1,0 +1,45 @@
+.carouselcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7d9e1;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+  }
+  
+  .buttoncontainer {
+    display: flex;
+    justify-content: center; /* Alinea los botones horizontalmente */
+    margin-top: 20px;
+  }
+  
+  .buttonnext,
+  .buttonprevious {
+    padding: 12px 24px;
+    margin: 0 10px; /* Agrega un margen entre los botones */
+    background-color: #fff;
+    color: #ff6b81;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .buttonnext:hover,
+  .buttonprevious:hover {
+    background-color: #ff4f63;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  .imagencarousel {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
